@@ -39,7 +39,7 @@ Simply download the repo in zip format on your local machine to run.
 
 ### 2. Encrypt a Message
 1. Place an image (e.g., `AIimpact.png`) in the project directory.
-2. At line 63 of code Write the image name instead of `AIimpact.png` (eg. `Img1.png`) and at line 64 write the new image name you want to generate in place of `AIimpact_encrypted.png`.
+2. At line 65 of code Write the image name instead of `AIimpact.png` (eg. `Img1.png`) and at line 66 write the new image name you want to generate in place of `AIimpact_encrypted.png`.
 3. Run the script.
 4. Select encryption (`1`), enter a message, and set a password.
 
