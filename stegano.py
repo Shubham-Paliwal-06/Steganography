@@ -13,7 +13,7 @@ def load_metadata(metadata_file="metadata.txt"):
     except FileNotFoundError:
         return None, 0
 
-def encrypt_message(image_path, output_path, message, password):
+def encrypt_message(image_path, output_path, message, password, metadata_file="metadata.txt"):
     img = cv2.imread(image_path)
     if img is None:
         print("Error: Image not found!")
@@ -33,10 +33,12 @@ def encrypt_message(image_path, output_path, message, password):
     print("Message encrypted and saved to", output_path)
     os.system(f'start {output_path}')  # Open image on Windows
     
-    save_metadata(password, len(message))
+    # Flush file and save new metadata
+    with open(metadata_file, "w") as f:
+        f.write(f"{password}\n{len(message)}")
 
-def decrypt_message(image_path, password):
-    stored_password, message_length = load_metadata()
+def decrypt_message(image_path, password, metadata_file="metadata.txt"):
+    stored_password, message_length = load_metadata(metadata_file)
     
     if password != stored_password:
         print("Authentication failed!")
