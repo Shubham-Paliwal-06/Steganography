@@ -29,9 +29,11 @@ This project implements **image-based steganography** using OpenCV in Python. It
 ## Installation & Usage
 ### 1. Clone the Repository
 ```sh
-git clone https://github.com/your-username/Image-Steganography.git
-cd Image-Steganography
+git clone https://github.com/Shubham-Paliwal-06/Steganography.git
+cd Steganography
 ```
+OR
+Simply download the repo in zip format on your local machine to run.
 
 ### 2. Encrypt a Message
 1. Place an image (e.g., `AIimpact.png`) in the project directory.
