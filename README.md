@@ -27,6 +27,8 @@ This project implements **image-based steganography** using OpenCV in Python. It
   ```
 
 ## Installation & Usage
+
+### Refer to 'stegano.py' file for the code.
 ### 1. Clone the Repository
 ```sh
 git clone https://github.com/Shubham-Paliwal-06/Steganography.git
