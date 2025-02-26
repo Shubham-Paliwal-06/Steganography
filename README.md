@@ -35,15 +35,10 @@ cd Image-Steganography
 
 ### 2. Encrypt a Message
 1. Place an image (e.g., `AIimpact.png`) in the project directory.
-2. Run the script:
-   ```sh
-   python image_steganography.py
-   ```
-3. Select encryption (`1`), enter a message, and set a password.
+2. At line 62 of code Write the image name instead of `AIimpact.png` (eg. `Img1.png`) and at line 63 write the new image name you want to generate in place of `AIimpact_encrypted.png`.
+3. Run the script.
+4. Select encryption (`1`), enter a message, and set a password.
 
 ### 3. Decrypt a Message
-1. Run the script again:
-   ```sh
-   python image_steganography.py
-   ```
+1. Run the script again.
 2. Select decryption (`2`) and enter the correct password.
